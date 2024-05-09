@@ -4,15 +4,15 @@ pipeline {
         stage('Stage 1') {
             steps {
                 echo 'build'
-              sh 'ls'
+                sh 'ls'
             }
         }
-        stage('Stage 1') {
+        stage('Stage 2') { // Changed stage name to 'Stage 2' to avoid duplication
             steps {
                 echo 'build'
-              sh '''
-              pwd
-              '''
+                sh '''
+                pwd
+                '''
             }
         }
     }
