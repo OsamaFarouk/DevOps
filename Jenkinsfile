@@ -20,6 +20,3 @@ pipeline {
         }
     }
 }
-
-#done
-#trigger pipeline
