@@ -1,10 +1,13 @@
 pipeline {
     agent any
     stages {
-        stage('Stage 1') {
+        stage('build') {
             steps {
                 echo 'build'
-                sh 'ls'
+                sh '''
+                    docker build -t 0samaa/bakehouse:latest
+
+                '''
             }
         }
         stage('Stage 2') { // Changed stage name to 'Stage 2' to avoid duplication
